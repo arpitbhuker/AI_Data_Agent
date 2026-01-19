@@ -1,0 +1,378 @@
+{
+  "e3adfd0984679c614002ce09137365f8": {
+    "cleaning": {
+      "duplicates_removed": 0,
+      "missing_values": {}
+    },
+    "features": {
+      "type": "LabelEncoded",
+      "nameOrig": "LabelEncoded",
+      "nameDest": "LabelEncoded",
+      "scaling": "StandardScaler"
+    },
+    "eda": {
+      "shape": [
+        36,
+        9
+      ],
+      "dtypes": {
+        "type": "object",
+        "amount": "float64",
+        "nameOrig": "object",
+        "oldbalanceOrg": "float64",
+        "newbalanceOrig": "float64",
+        "nameDest": "object",
+        "oldbalanceDest": "float64",
+        "newbalanceDest": "float64",
+        "isFraud": "int64"
+      },
+      "summary": {
+        "type": {
+          "count": 36,
+          "unique": 4,
+          "top": "PAYMENT",
+          "freq": 25,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "amount": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 24264.733333333337,
+          "std": 77008.33099439515,
+          "min": 181.0,
+          "25%": 2423.5074999999997,
+          "50%": 4360.555,
+          "75%": 9693.615,
+          "max": 416106.78
+        },
+        "nameOrig": {
+          "count": 36,
+          "unique": 36,
+          "top": "C1231006815",
+          "freq": 1,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "oldbalanceOrg": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 420588.4463888889,
+          "std": 1496378.1430860832,
+          "min": 181.0,
+          "25%": 8862.75,
+          "50%": 21127.5,
+          "75%": 70593.0,
+          "max": 6489960.66
+        },
+        "newbalanceOrig": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 413904.2630555555,
+          "std": 1494232.1807332446,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 16061.195,
+          "75%": 63919.73,
+          "max": 6485687.1
+        },
+        "nameDest": {
+          "count": 36,
+          "unique": 36,
+          "top": "M1979787155",
+          "freq": 1,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "oldbalanceDest": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 18334.6625,
+          "std": 63383.99215391611,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 291247.23
+        },
+        "newbalanceDest": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 22828.759166666667,
+          "std": 67025.37211806075,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 290772.6
+        },
+        "isFraud": {
+          "count": 36.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 0.16666666666666666,
+          "std": 0.3779644730092272,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 1.0
+        }
+      },
+      "correlation": {
+        "amount": {
+          "amount": 1.0,
+          "oldbalanceOrg": -0.035886099711402934,
+          "newbalanceOrig": -0.03737193869496691,
+          "oldbalanceDest": 0.6661519097145387,
+          "newbalanceDest": 0.5815996954616763,
+          "isFraud": -0.08782696716285646
+        },
+        "oldbalanceOrg": {
+          "amount": -0.035886099711402934,
+          "oldbalanceOrg": 1.0,
+          "newbalanceOrig": 0.9999900161961981,
+          "oldbalanceDest": 0.41534820067696704,
+          "newbalanceDest": 0.44077690310692186,
+          "isFraud": -0.12464693435588692
+        },
+        "newbalanceOrig": {
+          "amount": -0.03737193869496691,
+          "oldbalanceOrg": 0.9999900161961981,
+          "newbalanceOrig": 1.0,
+          "oldbalanceDest": 0.41393775874025635,
+          "newbalanceDest": 0.43915230767563324,
+          "isFraud": -0.12563598242299723
+        },
+        "oldbalanceDest": {
+          "amount": 0.6661519097145387,
+          "oldbalanceOrg": 0.41534820067696704,
+          "newbalanceOrig": 0.41393775874025635,
+          "oldbalanceDest": 1.0,
+          "newbalanceDest": 0.9070305583179412,
+          "isFraud": -0.06385302805836422
+        },
+        "newbalanceDest": {
+          "amount": 0.5815996954616763,
+          "oldbalanceOrg": 0.44077690310692186,
+          "newbalanceOrig": 0.43915230767563324,
+          "oldbalanceDest": 0.9070305583179412,
+          "newbalanceDest": 1.0,
+          "isFraud": -0.11595996743154692
+        },
+        "isFraud": {
+          "amount": -0.08782696716285646,
+          "oldbalanceOrg": -0.12464693435588692,
+          "newbalanceOrig": -0.12563598242299723,
+          "oldbalanceDest": -0.06385302805836422,
+          "newbalanceDest": -0.11595996743154692,
+          "isFraud": 1.0
+        }
+      }
+    }
+  },
+  "64c6f420f19c8929c02faf8c6381f166": {
+    "cleaning": {
+      "duplicates_removed": 0,
+      "missing_values": {
+        "Study Environment": 1
+      }
+    },
+    "features": {
+      "Timestamp": "LabelEncoded",
+      "Your Academic Stage": "LabelEncoded",
+      "Study Environment": "LabelEncoded",
+      "What coping strategy you use as a student?": "LabelEncoded",
+      "Do you have any bad habits like smoking, drinking on a daily basis?": "LabelEncoded",
+      "scaling": "StandardScaler"
+    },
+    "eda": {
+      "shape": [
+        140,
+        9
+      ],
+      "dtypes": {
+        "Timestamp": "object",
+        "Your Academic Stage": "object",
+        "Peer pressure": "int64",
+        "Academic pressure from your home": "int64",
+        "Study Environment": "object",
+        "What coping strategy you use as a student?": "object",
+        "Do you have any bad habits like smoking, drinking on a daily basis?": "object",
+        "What would you rate the academic  competition in your student life": "int64",
+        "Rate your academic stress index ": "int64"
+      },
+      "summary": {
+        "Timestamp": {
+          "count": 140,
+          "unique": 140,
+          "top": "24/07/2025 22:05:39",
+          "freq": 1,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "Your Academic Stage": {
+          "count": 140,
+          "unique": 3,
+          "top": "undergraduate",
+          "freq": 100,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "Peer pressure": {
+          "count": 140.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 3.0714285714285716,
+          "std": 1.083843793616946,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 3.0,
+          "75%": 4.0,
+          "max": 5.0
+        },
+        "Academic pressure from your home": {
+          "count": 140.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 3.1785714285714284,
+          "std": 1.2766179303867682,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 3.0,
+          "75%": 4.0,
+          "max": 5.0
+        },
+        "Study Environment": {
+          "count": 140,
+          "unique": 3,
+          "top": "Peaceful",
+          "freq": 70,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "What coping strategy you use as a student?": {
+          "count": 140,
+          "unique": 3,
+          "top": "Analyze the situation and handle it with intellect",
+          "freq": 87,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "Do you have any bad habits like smoking, drinking on a daily basis?": {
+          "count": 140,
+          "unique": 3,
+          "top": "No",
+          "freq": 123,
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "25%": NaN,
+          "50%": NaN,
+          "75%": NaN,
+          "max": NaN
+        },
+        "What would you rate the academic  competition in your student life": {
+          "count": 140.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 3.492857142857143,
+          "std": 1.028349439331336,
+          "min": 1.0,
+          "25%": 3.0,
+          "50%": 4.0,
+          "75%": 4.0,
+          "max": 5.0
+        },
+        "Rate your academic stress index ": {
+          "count": 140.0,
+          "unique": NaN,
+          "top": NaN,
+          "freq": NaN,
+          "mean": 3.7214285714285715,
+          "std": 1.0323393643596943,
+          "min": 1.0,
+          "25%": 3.0,
+          "50%": 4.0,
+          "75%": 4.0,
+          "max": 5.0
+        }
+      },
+      "correlation": {
+        "Peer pressure": {
+          "Peer pressure": 1.0,
+          "Academic pressure from your home": 0.3702752530521628,
+          "What would you rate the academic  competition in your student life": 0.20055754754107197,
+          "Rate your academic stress index ": 0.47442580447114713
+        },
+        "Academic pressure from your home": {
+          "Peer pressure": 0.3702752530521628,
+          "Academic pressure from your home": 1.0,
+          "What would you rate the academic  competition in your student life": 0.1297594635122459,
+          "Rate your academic stress index ": 0.40921936700171274
+        },
+        "What would you rate the academic  competition in your student life": {
+          "Peer pressure": 0.20055754754107197,
+          "Academic pressure from your home": 0.1297594635122459,
+          "What would you rate the academic  competition in your student life": 1.0,
+          "Rate your academic stress index ": 0.4487666156392419
+        },
+        "Rate your academic stress index ": {
+          "Peer pressure": 0.47442580447114713,
+          "Academic pressure from your home": 0.40921936700171274,
+          "What would you rate the academic  competition in your student life": 0.4487666156392419,
+          "Rate your academic stress index ": 1.0
+        }
+      }
+    }
+  }
+}

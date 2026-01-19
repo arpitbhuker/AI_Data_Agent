@@ -1,0 +1,18 @@
+REPORT_SECTIONS = [
+    "Executive Summary",
+    "Introduction",
+    "Data Overview",
+    "Data Loading and Cleaning",
+    "Data Summary and Descriptive Statistics",
+    "Summary Statistics",
+    "Feature Distribution",
+    "Missing Values Analysis",
+    "Univariate Analysis",
+    "Bivariate Analysis",
+    "Feature Engineering",
+    "Outlier Detection",
+    "Correlation Analysis",
+    "Custom Analyses",
+    "Conclusions and Recommendations",
+    "Next Steps",
+]
